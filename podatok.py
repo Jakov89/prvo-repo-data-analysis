@@ -39,12 +39,8 @@ for employee in emp:
 #empoyees = sesija.query(Employee).filter_by(position = 'Developer').limit(3).all()
 #print(empoyees)
 
-#empoyee = sesija.query(Employee).filter_by(years_in_company = 5).first()
-#empoyee.salary = 50000
-#sesija.commit()
+
 
 empoyee = sesija.query(Employee).filter_by(id= 5).first()
 sesija.delete(empoyee)
 sesija.commit()
-
-
