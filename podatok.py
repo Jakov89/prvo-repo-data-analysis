@@ -39,8 +39,7 @@ for employee in emp:
 #empoyees = sesija.query(Employee).filter_by(position = 'Developer').limit(3).all()
 #print(empoyees)
 
+print("Novi promeni vo nov branchj")
+ime = input("Vnesete go vasheto ime: ")
+print(f"Zdravo {ime}")
 
-
-empoyee = sesija.query(Employee).filter_by(id= 5).first()
-sesija.delete(empoyee)
-sesija.commit()
